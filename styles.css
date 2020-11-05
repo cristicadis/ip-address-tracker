@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+
+
+}
+
+
+
+.top-content {
+  background-image: url("images/pattern-bg.png");
+  background-position: center;
+  background-size: cover;
+  height: 260px;
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+
+.heading {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.inputs {
+  display: flex;
+  height: 50px;
+  margin: 0 auto;
+
+  width: 80%;
+}
+
+#IP-input {
+  border-radius: 12px 0 0 12px;
+  width: 100%;
+  border: none;
+  padding-left: 18px;
+  font-size: 16px;
+  outline: none;
+}
+
+#IP-button {
+  width: 60px;
+  border: none;
+  background-color: black;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+  outline: none;
+}
+
+#IP-button:hover { background-color: hsl(0, 0%, 59%);}
+
+.dates {
+  padding-top: 15px;
+  width: 80%;
+  height: 250px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  transform: translate(-50%, 55%);
+
+  z-index: 999;
+  -webkit-box-shadow: -1px 0px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 0px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: -1px 0px 15px 0px rgba(0,0,0,0.75);
+
+}
+.dates div {
+  width: 100%;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.detail_item h2 {
+  font-size: 12px;
+  color:   hsl(0, 0%, 59%);
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.detail_item p {
+  color: hsl(0, 0%, 17%);
+  font-weight: 700;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+
+#mapid {
+  height: 63vh;
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 1024px) {
+  .heading {
+    padding-bottom: 30px;
+  }
+
+  .inputs {
+    width: 40%;
+  }
+
+  .dates {
+    height: 150px;
+    transform: translate(-50%, 50%);
+    flex-direction: row;
+
+  }
+  .dates div {
+    text-align: left;
+    width: 25%;
+    padding-left: 20px;
+
+    padding-right: 3%;
+  }
+
+
+  .detail_item h2 {
+    padding-bottom: 15px;
+  }
+
+}

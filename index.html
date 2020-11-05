@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+
+
+        <div class="top-content">
+          <h1 class="heading">IP Address Tracker</h1>
+          <div class="inputs">
+            <input type="text" id="IP-input"   required placeholder="Search for any IP address or domain" >
+            <button type="button" id="IP-button" name="button"><img src="images/icon-arrow.svg" alt=""></button>
+          </div>
+          <div class="dates">
+            <div class="detail_item">
+              <h2>IP Address</h2>
+              <p id="adress">-</p>
+            </div>
+            <div class="detail_item">
+              <h2>Location</h2>
+              <p id="location">-</p>
+            </div>
+            <div class="detail_item">
+              <h2>Timezone</h2>
+              <p id="timezone">-</p>
+            </div>
+            <div class="detail_item">
+              <h2>ISP</h2>
+              <p id="isp">-</p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+    <div id="mapid"></div>
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Cristian Cadis</a>.
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" type="text/javascript"></script>
+
+
+</body>
+</html>
